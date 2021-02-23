@@ -8,62 +8,70 @@
   <meta name="title" content="Coursify.me">
   <meta name="description" content="Olá, me chamo Bruno. Estou estudando desenvolvimento web. Nesta página  demonstrarei um pouco do que aprendi, cirando projetos, ou atualizando as funcionalidades dos já existentes.">
 
+  <link href="//db.onlinewebfonts.com/c/5ad142d0e49ca868b1530c30a47c625f?family=SF+UI+Text" rel="stylesheet" type="text/css"/>
   
   <title>Coursify.Me</title>
 
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="carousel.css">
 </head>
 <body>
   <div class="loginScreen">
 
     <div class="container-data">
-      <img src="./src/img/logo.svg" alt="logo da coursify.me" class="logo">
+      <div class="data-content">
+        <img src="./src/img/logo.svg" alt="logo da coursify.me" class="logo">
 
-      <h3>Seja bem vindo ao</h3>
-      <h3>Coursify.Me Enterprise</h3>
-      <p>Although the bobcat is rarely seen, it is the most common wildcat in North America.</p>
-
-      <div class="sector-controll">
-        <div class="active">
-          <h2>Cadastro</h2>
+        <div class="apresentation">
+          <span>Seja bem vindo ao</span> <br>
+          <span>Coursify.Me Enterprise</span>
+          <p>Although the bobcat is rarely seen, it is the most common wildcat in North America.</p>
         </div>
-
-        <button type="change-sector">
-          <h2>login</h2>
-        </button>
-      </div>
-      
-      <div class="register">
-        <form action="/" method="get">
-          <input type="text" id="sname" name="sname" placeholder="Nome da Escola" required><br>
-          <input type="email" id="email" name="email" placeholder="Seu e-mail" required><br>
-          <input type="password" id="password" name="password" placeholder="Crie uma senha" required>
-          <div class="phone">
-            <input type="number" id="region" name="region" placeholder="&#43;55" required>
-            <input type="text" id="number" name="number" placeholder="00 00000-0000" required>
+  
+  
+        <div class="sector-controll">
+          <div class="now">
+            <span>Cadastro</span>
           </div>
-          <button type="submit" class="registerbtn">Cadastrar</button>
-        </form>
+            
+          <button type="button" class="change-sector" onclick="setTimeout(HandleChangeForm(0), 1000)">
+            <span>Login</span>
+          </button>
+        </div>
+        
+        <div class="form">
+          <form action="/" method="get">
+            <input type="text" id="sname" name="sname" placeholder="Nome da Escola" required><br>
+            <input type="email" id="email" name="email" placeholder="Seu e-mail" required><br>
+            <input type="password" id="password" name="password" placeholder="Crie uma senha" required>
+            <div class="phone">
+              <input type="number" id="region" name="region" placeholder="&#43;55" required>
+              <input type="number" id="number" name="number" placeholder="00 00000-0000" required>
+            </div>
+            
+            <button type="submit" class="confirm-form">
+              <span>Cadastrar</span>
+            </button>
+          </form>
+        </div>
       </div>
-      
-      <div class="login">
-        <form action="/" method="get">
-          <input type="email" id="email" name="email" placeholder="E-mail" required><br>
-          <input type="password" id="password" name="password" placeholder="Senha" required>
-          <button type="submit" class="registerbtn">Cadastrar</button>
-        </form>
 
-      </div>
-
-      
       <div class="copyright">
         <p>2020 &copy; Coursify.Me. Todos os direitos reservados</p>
       </div>
     </div>
 
     <div class="container-carousel">
-      <img src="./src/img/image_01.svg" alt="logo da coursify.me" class="img1">
-      <img src="./src/img/image_02.svg" alt="logo da coursify.me" class="img2">
+      <div class="carousel-img">
+        <img src="./src/img/image_01.svg" alt="logo da coursify.me" class="img1">
+      </div>
+
+      <div class="carousel-controller">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+      </div>
+
     </div>
 
 

@@ -7,6 +7,15 @@
   -webkit-box-sizing: border-box;
 }
 
+body {
+  font-family: normal "SF UI Text";
+  background: #FAFAFA;
+}
+
+button {
+  cursor: pointer;
+}
+
 :root {
   --background-screen: #FAFAFA;
   --background-data: #FFFFFF;
@@ -15,13 +24,9 @@
   --text-unselected: #C4C4C4;
 }
 
-.loginScreen {
-  display: flex;
-  background-color: var(--background-screen);
-  width: 1440px;
-  margin: 0 auto;
+
+
+.img2 {
+  display: none;
 }
 
-.container-data {
-  background-color: var(--background-data);
-}

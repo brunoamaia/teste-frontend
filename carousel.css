@@ -1,0 +1,32 @@
+.container-carousel {
+  display: flex;
+  margin: 146px 63px auto auto;
+  flex-direction: column;
+}
+
+.carousel-img {
+  margin-bottom: 15px;
+}
+.carousel-img img {
+  height: 477px;
+  width: 625px;
+}
+
+.carousel-controller {
+  margin: 0 auto;
+  display: flex;
+  width: 50px;
+}
+
+
+.dot {
+  background: var(--text-unselected);
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin: 0 2px;
+}
+
+.active {
+  background: var(--green)
+;}

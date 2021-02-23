@@ -1,0 +1,138 @@
+.loginScreen {
+  display: flex;
+  background-color: var(--background-screen);
+  height: 768px;
+  width: 1366px;
+  margin: 0 auto;
+  
+}
+
+.container-data {
+  background-color: var(--background-data);
+  margin: 40px auto auto 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+
+  height: 688px;
+  width: 544px;
+  box-shadow: 0px 0px 10px #3333331F;
+  border-radius: 30px;
+}
+
+.data-content {
+  margin: 30px;
+}
+
+.logo {
+  margin: 0 auto 25px;
+}
+
+.apresentation {
+  color: var(--text);
+}
+.apresentation span {
+  font: 22px "SF UI Text", sans-serif;
+}
+.apresentation span:nth-of-type(2) {
+  color: var(--green);
+  font-weight: bold;
+}
+.apresentation p {
+  font: normal 16px "SF UI Text";
+  margin: 20px 40px 0 0;
+}
+
+.sector-controll {
+  font: 22px "SF UI Text", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+
+.now {
+  font: bold 22px "SF UI Text", sans-serif;
+  color: var(--text);
+  border-bottom: 4px solid var(--green);
+}
+
+.change-sector {
+  font: 22px "SF UI Text", sans-serif;
+  color: var(--text-unselected);
+  border: none;
+  background: transparent;
+}
+.change-sector span {
+  font-weight: 100;
+}
+
+.non-active {
+  display: none;
+}
+
+.data-content form input {
+  border: 1px solid var(--text-unselected);
+  border-radius: 8px;
+  height: 35px;
+  width: 484px;
+  margin: 10px 0;
+}
+::placeholder {
+  padding-left: 15px;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  padding-left: 15px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  padding-left: 15px;
+}
+:-ms-input-placeholder { /* IE 15+ */
+  padding-left: 15px;
+}
+:-moz-placeholder { /* Firefox 18- */
+  padding-left: 15px;
+}
+
+.phone {
+  display: flex;
+  justify-content: space-between;
+}
+
+.phone input:first-child {
+  width: 97px
+}
+.phone input:nth-child(2) {
+  width: 382px
+}
+
+form {
+  text-align: center
+}
+.confirm-form {
+  background: var(--green);
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  width: 160px;
+  margin: 12px auto;
+}
+
+.confirm-form span {
+  font: bold 18px "SF UI Text", sans-serif;
+  color: var(--background-data);
+  padding: 10px 35px;
+}
+
+form p {
+  font: normal 16px "SF UI Text", sans-serif;
+  margin: 10px auto 20px;
+  text-align: left;
+}
+
+.copyright {
+  color: var(--text);
+  font: lighter 14px "SF UI Text", sans-serif;
+  text-align: center;
+  padding: 20px;
+}
