@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="title" content="Coursify.me">
+  <meta name="description" content="Olá, me chamo Bruno. Estou estudando desenvolvimento web. Nesta página  demonstrarei um pouco do que aprendi, cirando projetos, ou atualizando as funcionalidades dos já existentes.">
+
+  
+  <title>Coursify.Me</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="loginScreen">
+
+    <div class="container-data">
+      <img src="./src/img/logo.svg" alt="logo da coursify.me" class="logo">
+
+      <h3>Seja bem vindo ao</h3>
+      <h3>Coursify.Me Enterprise</h3>
+      <p>Although the bobcat is rarely seen, it is the most common wildcat in North America.</p>
+
+      <div class="sector-controll">
+        <div class="active">
+          <h2>Cadastro</h2>
+        </div>
+
+        <button type="change-sector">
+          <h2>login</h2>
+        </button>
+      </div>
+      
+      <div class="register">
+        <form action="/" method="get">
+          <input type="text" id="sname" name="sname" placeholder="Nome da Escola" required><br>
+          <input type="email" id="email" name="email" placeholder="Seu e-mail" required><br>
+          <input type="password" id="password" name="password" placeholder="Crie uma senha" required>
+          <div class="phone">
+            <input type="number" id="region" name="region" placeholder="&#43;55" required>
+            <input type="text" id="number" name="number" placeholder="00 00000-0000" required>
+          </div>
+          <button type="submit" class="registerbtn">Cadastrar</button>
+        </form>
+      </div>
+      
+      <div class="login">
+        <form action="/" method="get">
+          <input type="email" id="email" name="email" placeholder="E-mail" required><br>
+          <input type="password" id="password" name="password" placeholder="Senha" required>
+          <button type="submit" class="registerbtn">Cadastrar</button>
+        </form>
+
+      </div>
+
+      
+      <div class="copyright">
+        <p>2020 &copy; Coursify.Me. Todos os direitos reservados</p>
+      </div>
+    </div>
+
+    <div class="container-carousel">
+      <img src="./src/img/image_01.svg" alt="logo da coursify.me" class="img1">
+      <img src="./src/img/image_02.svg" alt="logo da coursify.me" class="img2">
+    </div>
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
