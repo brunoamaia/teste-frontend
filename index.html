@@ -9,12 +9,16 @@
   <meta name="description" content="Olá, me chamo Bruno. Estou estudando desenvolvimento web. Nesta página  demonstrarei um pouco do que aprendi, cirando projetos, ou atualizando as funcionalidades dos já existentes.">
 
   <link href="//db.onlinewebfonts.com/c/5ad142d0e49ca868b1530c30a47c625f?family=SF+UI+Text" rel="stylesheet" type="text/css"/>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
   
   <title>Coursify.Me</title>
 
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="login.css">
   <link rel="stylesheet" href="carousel.css">
+  <link rel="stylesheet" href="transition.css">
 </head>
 <body>
   <div class="loginScreen">
@@ -35,24 +39,28 @@
             <span>Cadastro</span>
           </div>
             
-          <button type="button" class="change-sector" onclick="setTimeout(HandleChangeForm(0), 1000)">
+          <button type="button" class="change-sector" onclick="animationChangeForm(0)">
             <span>Login</span>
           </button>
         </div>
         
         <div class="form">
           <form action="/" method="get">
-            <input type="text" id="sname" name="sname" placeholder="Nome da Escola" required><br>
-            <input type="email" id="email" name="email" placeholder="Seu e-mail" required><br>
-            <input type="password" id="password" name="password" placeholder="Crie uma senha" required>
-            <div class="phone">
-              <input type="number" id="region" name="region" placeholder="&#43;55" required>
-              <input type="number" id="number" name="number" placeholder="00 00000-0000" required>
-            </div>
-            
-            <button type="submit" class="confirm-form">
-              <span>Cadastrar</span>
-            </button>
+            <fieldset>
+              <div class="inputs">
+                <input class="" type="text" id="sname" name="sname" placeholder="Nome da Escola"  value="" required><br>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" value="" required><br>
+                <input type="password" id="password" name="password" placeholder="Crie uma senha" value="" required>
+                <div class="phone">
+                  <input type="number" id="region" name="region" placeholder="+55" value="" required>
+                  <input type="number" id="number" name="number" placeholder="(00) 00000-0000" value="" required>
+                </div>
+              </div>
+              
+              <button type="submit" class="confirm-form">
+                <span>Cadastrar</span>
+              </button>
+            </fieldset>
           </form>
         </div>
       </div>

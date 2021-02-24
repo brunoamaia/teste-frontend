@@ -32,19 +32,19 @@
   color: var(--text);
 }
 .apresentation span {
-  font: 22px "SF UI Text", sans-serif;
+  font: 22px "SF UI Text", 'Roboto', sans-serif;
 }
 .apresentation span:nth-of-type(2) {
   color: var(--green);
   font-weight: bold;
 }
 .apresentation p {
-  font: normal 16px "SF UI Text";
+  font: normal 16px "SF UI Text", 'Roboto', sans-serif;
   margin: 20px 40px 0 0;
 }
 
 .sector-controll {
-  font: 22px "SF UI Text", sans-serif;
+  font: 22px "SF UI Text", 'Roboto', sans-serif;
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
@@ -52,19 +52,19 @@
 }
 
 .now {
-  font: bold 22px "SF UI Text", sans-serif;
+  font: bold 22px "SF UI Text", 'Roboto', sans-serif;
   color: var(--text);
   border-bottom: 4px solid var(--green);
 }
 
 .change-sector {
-  font: 22px "SF UI Text", sans-serif;
+  font: 22px "SF UI Text", 'Roboto', sans-serif;
   color: var(--text-unselected);
   border: none;
   background: transparent;
 }
 .change-sector span {
-  font-weight: 100;
+  font-weight: lighter;
 }
 
 .non-active {
@@ -77,21 +77,6 @@
   height: 35px;
   width: 484px;
   margin: 10px 0;
-}
-::placeholder {
-  padding-left: 15px;
-}
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  padding-left: 15px;
-}
-::-moz-placeholder { /* Firefox 19+ */
-  padding-left: 15px;
-}
-:-ms-input-placeholder { /* IE 15+ */
-  padding-left: 15px;
-}
-:-moz-placeholder { /* Firefox 18- */
-  padding-left: 15px;
 }
 
 .phone {
@@ -109,6 +94,27 @@
 form {
   text-align: center
 }
+
+form fieldset {
+  border: none;
+}
+
+.inputs input[type=text],
+.inputs input[type=email],
+.inputs input[type=number],
+.inputs input[type=password],
+.inputs select, 
+.inputs textarea{
+  font: lighter 16px "SF UI Text", 'Roboto', sans-serif;
+	padding-left: 15px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .confirm-form {
   background: var(--green);
   border: none;
@@ -119,20 +125,20 @@ form {
 }
 
 .confirm-form span {
-  font: bold 18px "SF UI Text", sans-serif;
+  font: bold 18px "SF UI Text", 'Roboto', sans-serif;
   color: var(--background-data);
   padding: 10px 35px;
 }
 
 form p {
-  font: normal 16px "SF UI Text", sans-serif;
+  font: normal 16px "SF UI Text", 'Roboto', sans-serif;
   margin: 10px auto 20px;
   text-align: left;
 }
 
 .copyright {
   color: var(--text);
-  font: lighter 14px "SF UI Text", sans-serif;
+  font: lighter 14px "SF UI Text", 'Roboto', sans-serif;
   text-align: center;
   padding: 20px;
 }
