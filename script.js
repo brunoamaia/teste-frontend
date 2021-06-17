@@ -24,7 +24,7 @@ function changeForm(state) {
     window.document.querySelector(".inputs").innerHTML = `
       <input type="email" id="email" name="email" placeholder="E-mail" required><br>
       <input type="password" id="password" name="password" placeholder="Senha" required>
-      <p>Esqueci minha senha</p>
+      <p><a href="/">Esqueci minha senha</a></p>
       `
   } else {
     window.document.querySelector(".inputs").innerHTML = `

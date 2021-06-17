@@ -136,6 +136,11 @@ form p {
   text-align: left;
 }
 
+form p a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .copyright {
   color: var(--text);
   font: lighter 14px "SF UI Text", 'Roboto', sans-serif;
